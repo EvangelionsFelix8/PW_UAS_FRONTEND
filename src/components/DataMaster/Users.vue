@@ -1,17 +1,17 @@
 <template>
     <v-main class="list">
-        <h3 class="text-h3" font-weight-medium mb-5> User Profile </h3>
+        <h3 class="text-h3" font-weight-medium mb-5> <v-icon x-large>mdi-account</v-icon> User Profile </h3>
 
-        <v-card>
+        <v-card class="grey lighten-3">
             <v-list-item three-line>
                 <v-list-item-content>
                     <v-list-item-title class="headline mb-1 text-left">
-                        Nama : {{ users.name }}
+                        <v-icon large>mdi-account</v-icon> Nama : {{ users.name }}
                     </v-list-item-title>
                     <v-list-item-title class="headline mb-1 text-left">
-                        Email : {{ users.email }}
+                        <v-icon large>mdi-email</v-icon> Email : {{ users.email }}
                     </v-list-item-title>
-                    <v-list-item-title class="headline mb-1 text-left">
+                    <v-list-item-title class="headline mb-1 text-left, pt-10">
                         Username : {{ users.username }}
                     </v-list-item-title>
                 </v-list-item-content>
@@ -27,7 +27,7 @@
                 </v-text-field> -->
                 <v-spacer></v-spacer>
                 <!-- <v-row justify="end"> -->
-                    <v-btn color="success" dark @click="dialog = true, editHandler(users)" >Edit</v-btn>
+                    <v-btn color="green darken-4" dark @click="dialog = true, editHandler(users)" >Edit</v-btn>
                 <!-- </v-row> -->
                 
             </v-card-title>

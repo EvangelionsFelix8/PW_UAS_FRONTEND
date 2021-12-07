@@ -1,10 +1,10 @@
 <template>
     <div class="dashboard">
-        <v-navigation-drawer v-model="drawer" class="fullheight" width="256" app>
+        <v-navigation-drawer v-model="drawer" class="fullheight, light-blue darken-4" width="256" app>
             <v-list-item>
                 <v-list-item-content>
-                    <v-list-item-title class="title"> {{ users.username }} </v-list-item-title>
-                    <v-list-item-subtitle> Welcome! </v-list-item-subtitle>
+                    <v-list-item-title class="title"> <v-icon color="black">mdi-account</v-icon> {{ users.username }} </v-list-item-title>
+                    <v-list-item-subtitle > Welcome! </v-list-item-subtitle>
                 </v-list-item-content>
             </v-list-item>
 
@@ -15,7 +15,7 @@
                     :key="item.title"
                     link
                     tag="router-link"
-                    :to="item.to">
+                    :to="item.to" color="white --text">
 
                     <v-list-item-content>
                         <v-list-item-title>{{ item.title }}</v-list-item-title>
@@ -23,7 +23,7 @@
                 </v-list-item>
             </v-list>
         </v-navigation-drawer>
-        <v-app-bar app fixed height="75px">
+        <v-app-bar app fixed height="75px" class="light-blue lighten-4">
             <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
             <VSpacer />
             <v-toolbar-items>
@@ -47,6 +47,7 @@ export default {
                 { title: "Dashboard", to: "/dashboard"},
                 { title: 'Product', to: '/product'},
                 { title: 'User', to: '/user'},
+                { title: 'Wishlist', to: '/wishlist'}
             ],
         };
     },

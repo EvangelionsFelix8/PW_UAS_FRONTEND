@@ -35,6 +35,12 @@ const router = new VueRouter({
                     meta: { title: 'Users'},
                     component: importComponent('DataMaster/Users')
                 },
+                {
+                    path: '/wishlist',
+                    name: 'Wishlist',
+                    meta: { title: 'Wishlists'},
+                    component: importComponent('DataMaster/Wishlists')
+                },
             ],
         },
 
