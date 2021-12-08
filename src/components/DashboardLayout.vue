@@ -46,8 +46,9 @@ export default {
             items: [
                 { title: "Dashboard", to: "/dashboard"},
                 { title: 'Product', to: '/product'},
-                { title: 'User', to: '/user'},
-                { title: 'Wishlist', to: '/wishlist'}
+                { title: 'Wishlist', to: '/wishlist'},
+                { title: 'Toko', to: '/toko'},
+                { title: 'User', to: '/user'}
             ],
         };
     },

@@ -28,6 +28,12 @@ const router = new VueRouter({
                     meta: { title: 'Products'},
                     component: importComponent('DataMaster/Products'),
                 },
+                {
+                    path: '/wishlist',
+                    name: 'Wishlist',
+                    meta: { title: 'Wishlists'},
+                    component: importComponent('DataMaster/Wishlists')
+                },
                 // Users
                 {
                     path: '/user',
@@ -36,10 +42,10 @@ const router = new VueRouter({
                     component: importComponent('DataMaster/Users')
                 },
                 {
-                    path: '/wishlist',
-                    name: 'Wishlist',
-                    meta: { title: 'Wishlists'},
-                    component: importComponent('DataMaster/Wishlists')
+                    path: '/toko',
+                    name: 'Toko',
+                    meta: { title: 'tokos'},
+                    component: importComponent('DataMaster/Tokos')
                 },
             ],
         },
